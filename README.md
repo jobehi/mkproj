@@ -14,6 +14,36 @@
 
 For other platforms, you can download and build the binary from the [source code repository](https://github.com/jobehi/mkproj).
 
+### Setup mkproj Globally on macOS (From Source Code)
+
+To set up `mkproj` globally on macOS from the source code, follow these steps:
+
+1. **Clone the Repository**:
+   ```sh
+   git clone https://github.com/jobehi/mkproj.git
+   cd mkproj
+   ```
+
+2. **Build the Binary**:
+   Build the `mkproj` binary using Go:
+   ```sh
+   go build -o mkproj
+   ```
+
+3. **Move the Binary to `/usr/local/bin`**:
+   Move the compiled binary to `/usr/local/bin` to make it accessible globally:
+   ```sh
+   sudo mv mkproj /usr/local/bin/
+   sudo chmod +x /usr/local/bin/mkproj
+   ```
+
+4. **Verify Installation**:
+   You can now use `mkproj` from anywhere in your terminal:
+   ```sh
+   mkproj help
+   ```
+
+
 ## Usage
 
 ### Command Overview
