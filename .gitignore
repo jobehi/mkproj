@@ -1,0 +1,47 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.out
+
+# Go specific
+*.log
+*.test
+*.prof
+*.pprof
+*.cov
+*.coverage
+*.coverprofile
+
+# Output of `go build` and `go test`
+/bin/
+/pkg/
+/out/
+/dist/
+
+# Dependency directories (vendor/)
+vendor/
+
+# Go workspace file
+go.work
+
+# Generated files
+gen/
+*.gen.go
+
+# IDE/editor specific (Optional)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MacOS specific
+.DS_Store
+
+# Homebrew
+/usr/local/Cellar/
+
+# mkproj binary
+mkproj
