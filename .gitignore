@@ -44,4 +44,4 @@ gen/
 /usr/local/Cellar/
 
 # mkproj binary
-mkproj
+/binaries
