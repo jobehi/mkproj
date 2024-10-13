@@ -4,7 +4,6 @@
 
 ## Features
 
-include pictures here
 
 Interactive Mode             |  Interactive Mode output
 :-------------------------:|:-------------------------:
@@ -104,7 +103,7 @@ By default, `mkproj` starts in interactive mode, where you can manually build yo
 
 ## Project Structure Input Format
 
-The input structure can be created interactively or provided as a text file. You can use dashes (`-`) for depth and suffix `:file` to mark an entry as a file. For example:
+The input structure can be created interactively or provided as a text file. You can use dashes (`-`) for depth and suffix `:file` to mark an entry as a file (for files with no extensions). For example:
 
 ```txt
 project-root
@@ -112,7 +111,7 @@ project-root
 -- main.go
 -- utils
 --- helper.go
-- README.md:file
+- README.md
 - .gitignore:file
 ```
 
