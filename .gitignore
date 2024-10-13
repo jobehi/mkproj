@@ -45,3 +45,5 @@ gen/
 
 # mkproj binary
 /binaries
+
+dist/
