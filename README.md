@@ -4,6 +4,13 @@
 
 ## Features
 
+include pictures here
+
+Interactive Mode             |  Interactive Mode output
+:-------------------------:|:-------------------------:
+![](doc/screenshot_1.png)  |  ![](doc/screenshot_2.png)
+
+
 - **Interactive Mode**: Easily create and modify your project structure interactively using standard editing keys. Build your ideal layout with minimal friction.
 - **Text-Based Structure Creation**: Create a project structure from a text file or piped input.
 - **Tree View**: Display the current directory structure, with the option to include or exclude hidden files.
