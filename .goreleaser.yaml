@@ -57,6 +57,11 @@ brews:
   - name: mkproj
     homepage: https://github.com/jobehi/mkproj
     description: A simple CLI tool to create project directories.
+
+    url_headers:
+      - "Accept: application/octet-stream"
+      - 'Authorization: bearer #{${{ secrets.TOKEN }}}'
+
     commit_author:
       name: Youssef El Behi
       email: youssef.ekbehi@gmail.com
@@ -67,6 +72,4 @@ brews:
       owner: jobehi
       name: homebrew-mkproj
       branch: brew-releases/{{ .Version }}
-      token: ${{ secrets.GITHUB_TOKEN }}
-
-      
+      token: ${{ secrets.TOKEN }}
