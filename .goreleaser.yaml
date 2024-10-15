@@ -68,5 +68,4 @@ brews:
     repository:
       owner: jobehi
       name: homebrew-mkproj
-      branch: brew-releases/{{ .Version }}
       token: "{{ .Env.GITHUB_TOKEN }}"
