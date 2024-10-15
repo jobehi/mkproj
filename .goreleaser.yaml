@@ -60,7 +60,7 @@ brews:
 
     url_headers:
       - "Accept: application/octet-stream"
-      - 'Authorization: bearer #{${{ secrets.TOKEN }}}'
+      - 'Authorization: bearer #{ENV["TOKEN"]}'
 
     commit_author:
       name: Youssef El Behi
