@@ -49,6 +49,23 @@ changelog:
     exclude:
       - "^docs:"
       - "^test:"
+      - ".github:"
       - 'README'
       - Merge pull request
       - Merge branch
+
+brews:
+  - name: mkproj
+    homepage: "https://github.com/jobehi/mkproj"
+    description: "A simple CLI tool to create project directories."
+
+    commit_author:
+      name: jobehi
+      email: youssef.elbehi@gmail.com
+    commit_msg_template: "Brew release {{ .Tag }}"
+    directory: Formula
+    license: "MIT"
+    repository:
+      owner: jobehi
+      name: homebrew-mkproj
+      token: "{{ .Env.GITHUB_TOKEN }}"
