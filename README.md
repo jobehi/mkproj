@@ -16,38 +16,19 @@ Interactive Mode             |  Interactive Mode output
 
 ## Installation
 
-`mkproj` will be available on [Homebrew](https://brew.sh/) soon, allowing easy installation for macOS users.
+`mkproj` is available on Homebrew for macOS and can be installed from source for other platforms.
 
-For other platforms, you can download and build the binary from the [source code repository](https://github.com/jobehi/mkproj).
+### Install mkproj on macOS using Homebrew
 
-### Setup mkproj Globally on macOS (From Source Code)
+To install `mkproj` on macOS using Homebrew, run:
 
-To set up `mkproj` globally on macOS from the source code, follow these steps:
+```sh
+  brew tap jobehi/mkproj
 
-1. **Clone the Repository**:
-   ```sh
-   git clone https://github.com/jobehi/mkproj.git
-   cd mkproj
-   ```
+  brew install mkproj
+```
 
-2. **Build the Binary**:
-   Build the `mkproj` binary using Go:
-   ```sh
-   go build -o mkproj
-   ```
-
-3. **Move the Binary to `/usr/local/bin`**:
-   Move the compiled binary to `/usr/local/bin` to make it accessible globally:
-   ```sh
-   sudo mv mkproj /usr/local/bin/
-   sudo chmod +x /usr/local/bin/mkproj
-   ```
-
-4. **Verify Installation**:
-   You can now use `mkproj` from anywhere in your terminal:
-   ```sh
-   mkproj help
-   ```
+For other platforms, you can download and build the binary from the [source code repository](#setup-mkproj-globally-from-source-code).
 
 
 ## Usage
@@ -115,15 +96,35 @@ project-root
 - .gitignore:file
 ```
 
-## Building from Source
+### Setup mkproj Globally From Source Code
 
-To build `mkproj` from source, clone the repository and run:
+To set up `mkproj` globally on macOS from the source code, follow these steps:
 
-```sh
-git clone https://github.com/jobehi/mkproj.git
-cd mkproj
-go build -o mkproj
-```
+1. **Clone the Repository**:
+   ```sh
+   git clone https://github.com/jobehi/mkproj.git
+   cd mkproj
+   ```
+
+2. **Build the Binary**:
+   Build the `mkproj` binary using Go:
+   ```sh
+   go build -o mkproj
+   ```
+
+3. **Move the Binary to `/usr/local/bin`**:
+   Move the compiled binary to `/usr/local/bin` to make it accessible globally:
+   ```sh
+   sudo mv mkproj /usr/local/bin/
+   sudo chmod +x /usr/local/bin/mkproj
+   ```
+
+4. **Verify Installation**:
+   You can now use `mkproj` from anywhere in your terminal:
+   ```sh
+   mkproj help
+   ```
+
 
 ## Contributing
 
